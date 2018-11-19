@@ -1,0 +1,60 @@
+
+
+body {
+    height: 100%;
+    width: 100%; 
+    margin: 0px;  /*removes default style*/
+    word-wrap: break-word;
+    font-family: 'Noto Sans TC';
+    color: rgb(196, 216, 109); /* REMOVE */
+}
+
+#root {
+    height: 100%;
+    overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+    margin: 0px;  
+    background-color: rgb(83, 15, 15); /* REMOVE */
+}
+
+
+.page {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px calc(100% - 55px);
+    grid-gap: 1em;
+}
+
+.topmenu {
+    background: #006d4c; /* REMOVE */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background: #006300; /* REMOVE */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+ * SIDEMENU AND TOOGLE STYLING
+ */
+
+.show-sidemenu {
+    background-color: rgb(6, 6, 78); /* REMOVE */
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    left: -215px;
+    top: 55px;
+    transition: left 0.5s ease;
+}
+
+.show-sidemenu:hover {
+    left: 0px
+}
+
+
