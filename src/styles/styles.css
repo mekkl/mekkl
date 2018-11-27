@@ -1,0 +1,61 @@
+
+body {
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#root {
+    height: 1fr;
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid {
+    padding: 0px;
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "content";
+    grid-template-rows: 80px 1fr;  
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    background-color: rgb(126, 126, 126); /* REMOVE */
+}
+
+header {
+    padding: 1.2em;
+    background: rgb(24, 52, 129); /* REMOVE */
+    }
+
+article {
+    padding: 1.2em;
+    background: rgb(49, 49, 49); /* REMOVE */
+}
+  #pageHeader {
+    grid-area: header;
+    }
+  #mainArticle { 
+    grid-area: content;      
+    }
+
+/**
+ * SIDEMENU AND TOOGLE STYLING
+ */
+.show-sidemenu {
+    background-color: rgb(6, 6, 78); /* REMOVE */
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    left: -215px;
+    top: 55px;
+    transition: left 0.5s ease;
+}
+
+.show-sidemenu:hover {
+    left: 0px
+}
+
+

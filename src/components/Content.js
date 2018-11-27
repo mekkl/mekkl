@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
+import '../styles/styles.css';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 
-export default class NgrokSupervisor extends Component {
-        constructor(props) {
-                super(props)
-                this.state = {}
-        }
+class App extends Component {
 
-        // async componentDidMount() {
-        //         fetch('http://localhost:3001/api/md/html/ngrok_pi_setup.md').then(res => res.json()).then(json => this.setState({ __html: json.html.join('\n') }))
-        // }
+    constructor(props) {
+        super(props);
+    }
 
-        render() {
-                return (
-                        <div className='flex-item-markdown'>
+    render() {
 
+        return (
+            <article id="mainArticle">Article</article>
+        );
+    }
+}
 
+export default App;
 
-                        </div>
-                )
-        }
-};

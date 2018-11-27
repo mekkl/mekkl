@@ -1,0 +1,75 @@
+
+/**
+ * CSS til markdown styling
+ * ----------------------------------- 
+ */
+.flex-item-markdown {
+    width: 0 calc(80%);
+    text-align: left;
+    color: rgb(44, 44, 44);
+    font-family: 'Roboto'; 
+    /* font-family: 'Roboto'; */
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 60px;
+    box-shadow: 10px 35px 50px grey, -10px 35px 50px grey; ;
+}
+
+.flex-item-markdown a {
+    color: rgb(22, 149, 207);
+}
+
+.flex-item-markdown a:hover {
+    text-decoration-line: underline; 
+    text-decoration-color: #0C6FD1;
+}
+
+.flex-item-markdown h2 {
+    font-size: 1.5em;
+}
+
+.flex-item-markdown h1, .flex-item-markdown h2 {
+    border-bottom: 1px solid #b6b6b6;
+    padding-bottom: .3em;
+}
+
+.flex-item-markdown h1, .flex-item-markdown h2, 
+.flex-item-markdown h3, .flex-item-markdown h4, 
+.flex-item-markdown h5, .flex-item-markdown h6 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.flex-item-markdown ul {
+    line-height: 2;
+}
+
+.flex-item-markdown pre, .flex-item-markdown code {
+    background-color: rgb(59, 59, 59);
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgb(231, 230, 230);
+    line-height: 1.86;
+    font-size: 90%;
+}
+
+  /* tekst i code block */
+.flex-item-markdown code {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.flex-item-markdown pre {
+    display: block;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 14px;
+    word-wrap: normal;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
