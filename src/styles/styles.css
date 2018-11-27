@@ -1,43 +1,48 @@
 
-
 body {
-    height: 100%;
-    width: 100%; 
-    margin: 0px;  /*removes default style*/
-    word-wrap: break-word;
-    font-family: 'Noto Sans TC';
-    color: rgb(196, 216, 109); /* REMOVE */
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #root {
-    height: 100%;
-    overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
-    margin: 0px;  
-    background-color: rgb(83, 15, 15); /* REMOVE */
+    height: 1fr;
+    margin: 0px;
+    padding: 0px;
 }
 
-
-.page {
-    height: 100%;
+.grid {
+    padding: 0px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 55px calc(100% - 55px);
-    grid-gap: 1em;
+    grid-template-areas: 
+        "header"
+        "content";
+    grid-template-rows: 80px 1fr;  
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    background-color: rgb(126, 126, 126); /* REMOVE */
 }
 
-.topmenu {
-    background: #006d4c; /* REMOVE */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+    padding: 1.2em;
+    background: rgb(24, 52, 129); /* REMOVE */
+    }
+
+article {
+    padding: 1.2em;
+    background: rgb(49, 49, 49); /* REMOVE */
 }
 
-.content {
-    background: #006300; /* REMOVE */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+#pageHeader {
+    grid-area: header;
+    }
+
+#mainArticle { 
+    grid-area: content;      
+    }
+
 
 /**
  * SIDEMENU AND TOOGLE STYLING
