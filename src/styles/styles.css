@@ -1,4 +1,9 @@
 
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
 body {
     margin: 0px;
     height: 100vh;
@@ -22,25 +27,46 @@ body {
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     height: 100vh;
-    background-color: rgb(126, 126, 126); /* REMOVE */
 }
 
 header {
     padding: 1.2em;
-    background: rgb(24, 52, 129); /* REMOVE */
-    }
+}
+
+
+    
 
 article {
     padding: 1.2em;
-    background: rgb(49, 49, 49); /* REMOVE */
 }
 
 #pageHeader {
     grid-area: header;
-    }
+    padding: 0px 40px 0px 40px;
+    background: #24292e;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#pageHeaderTitle {
+    flex-grow: 1;
+}
+
+pageHeaderMiddle {
+    flex-grow: 5;
+}
+
+pageHeaderMenu {
+    flex-grow: 1;
+}
 
 #mainArticle { 
-    grid-area: content;      
+    grid-area: content;     
+    
+    background: #FFFFFF;
+    color: #24292e;
     }
 
 

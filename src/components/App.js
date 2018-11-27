@@ -19,15 +19,17 @@ class App extends Component {
 
     render() {
 
-        let sidemenu_class = "show-sidemenu"
-        // let toggle_sidemenu_class = this.state.showMenu ? "toogle-hide-sidemenu" : "toogle-show-sidemenu";
-        // let btn_icon = this.state.showMenu ? <MenuIcon  width={50} fill={'black'} /> : <HideMenuIcon  width={50} fill={'black'} />;
-
         return (
 
             <div className='grid'>
-                <header id="pageHeader">Header</header>
-                <article id="mainArticle">Article</article>
+                <header id="pageHeader">
+                    <div id='pageHeaderTitle'>mekkl</div>
+                    <div id='pageHeaderMiddle'></div>
+                    <div id='pageHeaderMenu'>articles   about</div>
+                </header>
+                <article id="mainArticle">
+                
+                </article>
             </div>
 
         );
